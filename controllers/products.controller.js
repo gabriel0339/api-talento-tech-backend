@@ -1,5 +1,6 @@
 import { ProductsService } from "../services/products.service.js";
 
+"obtiene la lista completa de productos y devuelve la lista en formato JSON"
 export const getProducts = async (req, res) => {
   const products = await ProductsService.getAll();
   res.json(products);
