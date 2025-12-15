@@ -10,4 +10,4 @@ if (!admin.apps.length) {
   });
 }
 
-export const db = null;
+export const db = admin.firestore();;
